@@ -102,7 +102,7 @@ def get_day(offset):
                 where each minute is up to 100 tweets from that minute
     '''
     start_date = (datetime.datetime.utcnow() - datetime.timedelta(days=offset, minutes=1))  # Increments start time
-    end_date = (datetime.datetime.utcnow() - datetime.timedelta(days=offset-1, minutes=2))  # Increments end time
+    end_date = (datetime.datetime.utcnow() - datetime.timedelta(days=offset, minutes=2))  # Increments end time
 
     x=0
     text = []
